@@ -16,6 +16,7 @@ build_requires:
   URI::URL: 0
 configure_requires:
   Module::Build: 0.3614
+  Software::License::CC0_1_0: 0
 dynamic_config: 1
 generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110440'
 license: unrestricted
@@ -26,7 +27,7 @@ name: LWP-Protocol-AnyEvent-http
 provides:
   LWP::Protocol::AnyEvent::http:
     file: lib/LWP/Protocol/AnyEvent/http.pm
-    version: v1.0.2
+    version: v1.0.3
 requires:
   AnyEvent: 0
   AnyEvent::HTTP: 2
@@ -36,4 +37,4 @@ requires:
   version: 0
 resources:
   license: http://creativecommons.org/publicdomain/zero/1.0/
-version: v1.0.2
+version: v1.0.3
