@@ -27,7 +27,7 @@ name: LWP-Protocol-AnyEvent-http
 provides:
   LWP::Protocol::AnyEvent::http:
     file: lib/LWP/Protocol/AnyEvent/http.pm
-    version: v1.0.4
+    version: v1.0.5
 requires:
   AnyEvent: 0
   AnyEvent::HTTP: 2
@@ -38,4 +38,4 @@ requires:
 resources:
   license: http://creativecommons.org/publicdomain/zero/1.0/
   repository: http://github.com/ikegami/perl-LWP-Protocol-AnyEvent-http
-version: v1.0.4
+version: v1.0.5
