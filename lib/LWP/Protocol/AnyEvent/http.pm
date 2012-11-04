@@ -4,7 +4,7 @@ package LWP::Protocol::AnyEvent::http;
 use strict;
 use warnings;
 
-use version; our $VERSION = qv('v1.0.5');
+use version; our $VERSION = qv('v1.0.6');
 
 use AnyEvent       qw( );
 use AnyEvent::HTTP qw( http_request );
@@ -37,6 +37,10 @@ sub _set_response_headers {
          split(/,(?=\s*\w+\s*(?:[=,;]|\z))/, $headers{'set-cookie'})
       ];
    }
+
+   # Immitate Net::HTTP's removal of newlines.
+   s/\s*\n\s+/ /g
+      for values %headers;
 
    $response->header(%headers);
 }
@@ -139,7 +143,7 @@ LWP::Protocol::AnyEvent::http - Event loop friendly HTTP and HTTPS backend for L
 
 =head1 VERSION
 
-Version 1.0.5
+Version 1.0.6
 
 
 =head1 SYNOPSIS
