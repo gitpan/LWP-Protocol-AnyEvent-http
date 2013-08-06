@@ -18,7 +18,7 @@ configure_requires:
   Module::Build: 0.3614
   Software::License::CC0_1_0: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120630'
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.120351'
 license: unrestricted
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -27,15 +27,16 @@ name: LWP-Protocol-AnyEvent-http
 provides:
   LWP::Protocol::AnyEvent::http:
     file: lib/LWP/Protocol/AnyEvent/http.pm
-    version: v1.0.7
+    version: v1.8.0
 requires:
   AnyEvent: 0
   AnyEvent::HTTP: 2
   HTTP::Response: 0
   LWP::Protocol: 0
+  LWP::Protocol::http: 0
   LWP::Simple: 5.827
   version: 0
 resources:
   license: http://creativecommons.org/publicdomain/zero/1.0/
   repository: http://github.com/ikegami/perl-LWP-Protocol-AnyEvent-http
-version: v1.0.7
+version: v1.8.0
